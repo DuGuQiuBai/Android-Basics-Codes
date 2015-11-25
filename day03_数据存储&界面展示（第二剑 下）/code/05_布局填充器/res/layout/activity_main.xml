@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="我是标题"
+        android:textColor="#123456"
+        android:textSize="20sp" />
+    
+    <!-- 1. 在Xml文件中配置ListView -->
+    <ListView
+        android:id="@+id/lv"
+        android:fastScrollEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+     
+</LinearLayout>
