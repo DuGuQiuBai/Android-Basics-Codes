@@ -1,0 +1,14 @@
+#Sat Aug 22 10:40:49 CST 2015
+tomcat7Server.web.isUptoDate=true
+tomcat7Server.web.shouldBackup=false
+tomcat7Server.web.isExploded=true
+tomcat7Server.web.shouldOverwrite=false
+tomcat7Server.web.isDeployed=true
+tomcat7Server.web.noFileCopy=false
+tomcat7Server.web.type=WebDeployment
+tomcat7Server.web.IEARProjectName=
+eclipse.preferences.version=1
+tomcat7Server.web.contextRoot=/web
+tomcat7Server.web.altContextRoot=
+tomcat7Server.web.deploymentPath=D\:\\Android\\apache-tomcat-7\\webapps\\web
+tomcat7Server.web.deployIsOverProject=false

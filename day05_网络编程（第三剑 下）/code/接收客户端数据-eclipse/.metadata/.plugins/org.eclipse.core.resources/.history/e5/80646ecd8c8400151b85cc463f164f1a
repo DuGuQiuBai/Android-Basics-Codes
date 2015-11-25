@@ -1,0 +1,49 @@
+package com.itheima.web;
+/**
+ * tomcat采用的码表是 iso-8859-1码表。 没有中文。
+ * 如果遇到了不认识的字符串 就默认使用本地的默认码表
+ */
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class LoginServlet
+ */
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("---------------------");
+
+		String qq = request.getParameter("qq");
+		String password = request.getParameter("pwd");
+		// 上面两行采用的码表是iso-8859-1的码表
+		System.out.println("qq:" + new String(qq.getBytes()));
+		System.out.println("pwd:" + new String(password.getBytes()));
+
+		// 模拟服务器的操作，查询数据库 看qq和密码是否正确
+		if ("123".equals(qq) && "asd".equals(password)) {
+			response.getOutputStream().write("success".getBytes());
+		} else {
+			response.getOutputStream().write("fail".getBytes());
+		}
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+		System.out.println("post过来的数据");
+	}
+
+}
