@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/et_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入QQ号码" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入QQ密码" />
+
+    <CheckBox
+        android:id="@+id/cb_rem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码" />
+
+    <Button
+        android:onClick="gxlogin"
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个性登录" />
+
+</LinearLayout>
