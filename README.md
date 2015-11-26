@@ -1,2 +1,7 @@
-# Android-Basics-Codes
-Android快速入门代码
+## Android-Basics-Codes
+
+ - 适合零基础入门。
+ - 此笔记是本人辛辛苦苦一个个字码出来的，转载请保留出处。
+
+## Disclaimer
+  版权归原作者所有，欢迎自由转载-非商用-非衍生-保持署名和链接。
